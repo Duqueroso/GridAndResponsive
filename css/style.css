@@ -1,0 +1,53 @@
+body {
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    background-color: bisque;
+}
+
+header {
+    display: grid;
+    grid-template-rows: max-content;
+    text-align: center;
+    background-color: yellowgreen;
+    width: 100vh;
+}
+
+main {
+    background-color:rgb(243, 205, 92);
+    display: grid;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 3rem;
+}
+
+main section img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media (max-width:500px) {
+
+    main {
+        width: 80%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        margin: 2rem;
+        justify-content: center;
+    }
+
+
+
+}
